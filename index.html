@@ -2,15 +2,110 @@
 <html>
 <head>
   <title>Manju Shop</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#f5f5f5;
+    }
+
+    header{
+      background:#ff6600;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    .products{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      padding:20px;
+    }
+
+    .card{
+      background:white;
+      width:250px;
+      margin:15px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+      overflow:hidden;
+      text-align:center;
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card h2{
+      margin:10px;
+    }
+
+    .price{
+      color:green;
+      font-size:22px;
+      font-weight:bold;
+    }
+
+    button{
+      background:#ff6600;
+      color:white;
+      border:none;
+      padding:12px 20px;
+      margin:15px;
+      border-radius:5px;
+      font-size:16px;
+    }
+
+    footer{
+      background:black;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:20px;
+    }
+  </style>
 </head>
 
-<body style="font-family: Arial; text-align:center;">
+<body>
 
-<h1>Welcome to Manju Shop</h1>
+<header>
+  <h1>🛍 Manju Shop</h1>
+  <p>Best Products At Affordable Prices</p>
+</header>
 
-<p>Discover amazing products at affordable prices</p>
+<div class="products">
 
-<button>Shop Now</button>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+    <h2>Stylish Shoes</h2>
+    <p class="price">₹999</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab">
+    <h2>Cool T-Shirt</h2>
+    <p class="price">₹499</p>
+    <button>Buy Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f">
+    <h2>Fashion Jacket</h2>
+    <p class="price">₹1499</p>
+    <button>Buy Now</button>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Manju Shop | All Rights Reserved
+</footer>
 
 </body>
-</html>
+  </html>
+  
